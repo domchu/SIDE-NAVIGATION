@@ -28,7 +28,7 @@
   justify-content: space-around;
   padding: 20px;
 }
-
+/* hiding the menu on the desktop view */
 .mobile-navlink ul {
   display: none;
 }
@@ -42,6 +42,21 @@
   text-transform: uppercase;
   font-weight: 400;
 }
+/* the hover effect on the menu */
+.navlink ul li::after {
+  width: 0;
+  content: "";
+  margin: auto;
+  display: block;
+  height: 2px;
+  background-color: #e90606;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navlink ul li:hover::after {
+  width: 100%;
+}
+/* hiding the bars icon on the desktop view */
 .ham {
   display: none;
 }
@@ -72,16 +87,16 @@
 }
 @media screen and (max-width: 700px) {
   .mobile-navlink ul {
+    /* displaying the menu on the mobile view and coming vertical*/
     display: flex;
     flex-direction: column;
     padding: 0;
     max-height: 0;
     overflow-y: hidden;
     transition: 0.5s;
-
-    /* background-color: #34; */
   }
   .mobile-navlink a {
+    /* styling the menu ul li a*/
     color: #fff;
     border-bottom: 1px solid;
     padding: 10px 0;
