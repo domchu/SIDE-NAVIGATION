@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.header {
+  background-color: black;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px;
+}
+.logo-img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.navlink {
+  display: flex;
+  align-items: center;
+}
+.navlink ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.mobile-navlink ul {
+  display: none;
+}
+
+.navlink ul li a {
+  color: #fff;
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.ham {
+  display: none;
+}
+.ban-img {
+  width: 100%;
+  height: 70vh;
+}
+.banner {
+  background: url("images/zana-latif-Z5uI3GKspyI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+.banner p {
+  color: #fff;
+  font-size: 40px;
+  padding: 3pc;
+}
+.img_column {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img_row {
+  margin: 15px;
+  width: 20%;
+}
+@media screen and (max-width: 700px) {
+  .mobile-navlink ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+    /* background-color: #34; */
+  }
+  .mobile-navlink a {
+    color: #fff;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .navlink ul {
+    transition: 0.5s;
+    display: none;
+  }
+  .ham {
+    display: block;
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  .img_column {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  .img_row {
+    width: 90%;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .img_row {
+    width: 40%;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+}
